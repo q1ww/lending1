@@ -12,6 +12,9 @@
     <!-- header-->
     <header class="header">
         <div class="container">
+            <div class="burger ">
+                <span></span>
+               </div>
             <div class="header__innerHead">
                <img src="images/Logo.jpg" class="header__logo" alt="logo">
                <nav class="navigator">
@@ -22,11 +25,12 @@
                    <a href="#"  class="navigator__a">Testimonials</a>
                </nav>
               <div class="sign">
-                  <a href="#" class="sign__span">sign in</a>
-                  <button class="sign__button smilearbtn">sign up</button>
-              </div>
+                    <a href="#" class="sign__span">sign in</a>
+                    <button class="sign__button smilearbtn">sign up</button>
+                </div>
             </div>
         </div>
+        
     </header>
      <!--header end-->
      <!-- intro -->
@@ -126,6 +130,7 @@
                       <li class="infoPlan__li">Yes Traffic Logs</li>
                       <li class="infoPlan__li">Works on All Devices</li>
                       <li class="infoPlan__li">Connect Anyware</li>
+                      
                     </ul>
                    </div>
                 <div class="planFooter">
@@ -147,7 +152,7 @@
                     </ul>
                 </div>
                 <div class="planFooter">
-                    <div class="planFooter__text "><span class="boldClass">$12</span>/ mo</div>
+                    <div class="planFooter__text "><span class="boldClass">$12 </span>/ mo</div>
                     <button class="planFooter__button smilearbtn">Select</button>
                 </div>
             </div>
@@ -302,7 +307,21 @@
            </div>
        </div>
    </footer>
-
+  <div class="singUserModal">
+      <div class="modal">
+          <div class="modal__title">Регестрация</div>
+          <form class="form" action="">
+                  <input type="text"  class="form__input" placeholder="Логин" >
+                  <input type="password" class="form__input" placeholder="Пароль">
+            <div class="bottom">
+                <a href="#" class="modal__reg">Зарегестрироваться</a>
+                <button class="bottom__btn redBtn">Войти</button>
+            </div>
+            
+          </form>
+          <img src="images/exit.png" class="modal__exit" alt="exit">
+      </div>
+  </div>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="javaScript/script.js"></script>
 </body>

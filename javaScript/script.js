@@ -48,3 +48,46 @@ var mySwiper = new Swiper('.swiper-container', {
         }
       }
 })
+
+
+let btn = document.querySelector('.burger'),
+    navigator = document.querySelector('.navigator'),
+    header = document.querySelector('.header'),
+    signButton  = document.querySelector('.sign__button'),
+    singUserModal = document.querySelector('.singUserModal')
+    
+
+
+btn.addEventListener('click', function(){
+    navigator.classList.toggle("active")
+    btn.classList.toggle('active')
+
+})
+
+
+window.addEventListener('scroll', function() {
+   if(window.pageYOffset > 200){
+       header.classList.add('headerActive')
+   }else{
+       header.classList.remove('headerActive')
+   }
+  });
+
+  signButton.addEventListener('click', function(){
+    singUserModal.style.display = "flex"
+  })
+  
+  singUserModal.addEventListener('click', function(e){
+     const target = e.target 
+     if(target.classList.contains('modal__exit') || target.classList.contains('singUserModal')){
+        singUserModal.style.display = "none"
+     }
+   
+  })
+
+
+
+
+
+
+
