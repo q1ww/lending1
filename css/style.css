@@ -1,0 +1,992 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+}
+
+*,
+:after,
+:before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.smilearbtn{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #F53838;
+    border: 1px solid #F53838;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.redBtn{
+    border:none;
+    width: 250px;
+    background: #F53838;
+    box-shadow: 0px 16px 16px -1px rgb(239,48,56,.6);
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.coruselItem + .swiper-slide-active{
+    box-shadow: 0px 24px 30px 9px rgb(13, 16, 37,.1); 
+    border:2px solid #F53838;
+    transition: linear box-shasow .2s, linear border .2s;
+}
+
+.swiper-container {
+   padding-bottom: 80px;
+   /* width: 80%; */
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+   display: none;
+}
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    left: -44%;
+    bottom: 3px;
+}
+
+
+/* .swiper-button-prev, 
+.swiper-button-next{
+    top: 80%;
+}
+.swiper-button-next{
+    top: 82%;
+}
+.swiper-button-prev{
+    left: 90%;
+} */
+.swiper-button-prev,
+.swiper-button-next{
+    position: static;
+    outline: none;
+}
+
+.swiper-button-next:after{
+    content: '';
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    border-top: 2px solid #F53838;
+    border-right: 2px solid #F53838;
+
+    transform: rotate(43deg);
+}
+.swiper-button-prev:after{
+
+    content: '';
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    border-top: 2px solid #F53838;
+    border-right: 2px solid #F53838;
+
+    transform: rotate(-136deg);
+
+}
+.relativeforslider{
+    position: relative;
+}
+.slider__buttons{
+    display: flex;
+    position: absolute;
+    right: 47px;
+    bottom: 0px;
+}
+/* dots */
+
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: #DDE0E4;
+    border-radius: 100%;
+    opacity: 1;
+    transition: linear width .2s;
+}
+.swiper-pagination-bullet-active{
+    width: 5px;
+    background: #F53838;
+    border-radius: 10px;
+    transition: linear width .3s;
+}
+.boldClass{
+    font-weight: bold;
+    color: black;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header */
+.header{
+    padding: 58px 0;
+}
+.header__innerHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigator__a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #4F5665;
+    text-transform: capitalize;
+}
+.navigator__a + .navigator__a{
+    margin-left: 40px;
+}
+
+.sign__button{
+    padding: 13px 45px;
+    text-transform: capitalize;
+    transition: linear background .3s;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F53855;
+}
+.sign__button:hover{
+    background: #F53855;
+    color: #fff;
+    transition: linear background .3s;
+}
+
+.sign__span{
+    font-weight:500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0B132A;
+    margin-right: 30px;
+    text-transform: capitalize;
+}
+
+/* intro */
+.intro__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LaslesVPN__title{
+    width: 555px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 70px;
+    color: #0B132A;
+}
+
+.imgPeople__img{
+    max-width: 610px;
+    width: 100%;
+}
+
+.intro{
+    padding-top: 100px;
+}
+
+
+.LaslesVPN__p{
+    width: 555px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin-bottom: 40px;
+}
+
+.LaslesVPN__btn{
+   
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+
+/* users */
+.users{
+    padding-top: 103px;
+    padding-bottom: 103px;
+    margin: 0 15px;
+}
+.users__over{
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: -1px 19px 26px 18px rgb(13,16,36,.1);
+    border-radius: 10px;
+}
+
+.users_items{
+    display: flex;
+}
+
+.item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 366px;
+    padding: 52px 0;
+    position: relative;
+}
+.item:not(:last-child):after{
+    content: "";
+    display: block;
+    border-right: 2px solid #EEEFF2;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    max-height: 125px;
+    height: 100%;
+}
+
+.item__info{
+    margin-left: 30px;
+}
+
+.item__number{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #0B132A;
+}
+.item__text{
+    font-size: 20px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+/* features */
+.features{
+    padding: 30px 0 130px 0;
+}
+.features__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features__img{
+    max-width: 510px;
+    width: 100%;
+}
+.infoForVpn__title{
+    max-width: 383px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: #0B132A;
+}
+
+.infoForVpn{
+ margin-top: 80px;
+}
+
+.infoForVpn__text{
+    width: 427.88px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin: 20px 0;
+}
+
+.infoForVpn__li{
+    font-size: 14px;
+    line-height: 30px;
+    color: #4F5665;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.infoForVpn__li:before{
+    content: "";
+    display: block;
+    background: url(../images/like.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -29px;
+    top: 2px;
+}
+
+.infoForVpn__lists{
+    margin-left: 30px;
+}
+
+
+/* choose */
+.choose{
+    background: #F6F6F6;
+    padding:60px 0 100px 0;
+}
+
+.planFooter__text{
+    margin: 100px 0 20px 0;
+    color: #4F5665;
+}
+
+.choose__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.planFooter{
+    text-align: center;
+}
+
+.chooseHeader{
+    margin-bottom: 60px;
+}
+
+.chooseHeader__title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    color: #0B132A;
+    margin-top: 20px;
+}
+
+.chooseHeader__subtitle{
+    width: 555px;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.freePlan__title{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 24px 0 20px 0;
+    line-height: 30px;
+    color: #0B132A;
+}
+
+.freePlan__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.freePlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    padding: 50px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: linear border .3s, linear transform .3s;
+    
+}
+.freePlan:last-child{
+    margin-right: 0;
+}
+.freePlan:hover{
+    border: 2px solid #F53838;
+    transition: linear border .3s, linear transform .3s;
+    transform: translateY(-20px);
+}
+.infoPlan{
+    margin-left: 50px;
+}
+
+.infoPlan__li{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #4F5665;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.infoPlan__li:before{
+    content: "";
+    display: block;
+    background: url(../images/arrow.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    left: -35px;
+}
+
+
+.planFooter__button{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F53838;
+    padding: 13px 62px;
+    transition: linear box-shadow .2s, linear background .2s, linear color .2s;
+}
+
+.planFooter__button:hover{
+    background: #F53838;
+    color: #fff;
+    box-shadow: 0px 16px 16px -1px rgb(239,48,56,.6);
+    transition: linear box-shadow .2s, linear background .2s, linear color .2s;
+}
+
+/* network */
+.network{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.network__title{
+    width: 383px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 35px;
+    color: #0B132A;
+}
+
+.network__subtitle{
+    width: 555px;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+    color: #4F5665;
+}
+
+.network__img{
+    margin-top: 140px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.network__brend{
+    max-width: 935px;
+    width: 100%;
+}
+
+/* slider */
+
+
+.slider{
+padding-top: 50px;
+padding-bottom: 250px;
+}
+
+.slider__inner{
+    display: flex;
+}
+
+.peopleInfo__person, .peopleInfo{
+    display: flex;
+    align-items: center;
+}
+.peopleInfo{
+    justify-content: space-between;
+}
+
+.nameContry{
+    margin-left: 20px;
+}
+.coruselItem{
+    max-width: 400px;
+    min-height: 200px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 20px 30px;
+    transition: linear box-shasow .2s, linear border .2s;
+}
+.coruselItem:last-child{
+    margin-right: 0;
+}
+/* .coruselItem:hover{
+    box-shadow: 0px 24px 30px 9px rgb(13, 16, 37,.1); 
+    border:2px solid #F53838;
+    transition: linear box-shasow .2s, linear border .2s;
+} */
+.nameContry__name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #0B132A;
+}
+
+.nameContry__contry{
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.coruselItem__comment{
+    font-size: 16px;
+    line-height: 26px;
+    color: #0B132A;
+}
+
+.raiting{
+    display: flex;
+    align-items: center;
+}
+
+.raiting__number{
+    font-size: 16px;
+    line-height: 30px;
+    color: #0B132A;
+    margin-right: 10px;
+}
+
+
+/* footer */
+
+.footer{
+    padding-top: 180px;
+    background: #F8F8F8;
+    position: relative;
+}
+
+.footerSubscribe{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vpnright{
+    display: flex;
+    
+}
+
+
+.subscribe{
+    max-width: 1140px;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -1px 19px 26px 18px rgb(13,16,36,.1);
+    border-radius: 10px;
+    padding: 48px 70px;
+}
+.subscribeb_btn{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.subscribe__title{
+    width: 371px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+    color: #0B132A;
+}
+
+.subscribe__substitle{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.vpnLeft__textVpn{
+    width: 340px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin: 20px 0 30px 0;
+}
+
+
+.lists__list-top{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0B132A;
+}
+
+.lists__list--a{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+.lists{
+    margin-left: 125px;
+}
+
+.vpnLeft__footer{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+}
+
+
+/* media */
+/* header */
+
+
+/* intro */
+@media (max-width:1110px){
+    .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+    }
+    .footerSubscribe{
+        top:-34%;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        left: -40%;
+        bottom: 3px;
+    }
+    .infoForVpn__title{
+        width: 100%;
+        line-height: 30px;
+        font-size: 23px;
+    }
+    .infoForVpn__text{
+        max-width: 300px;
+        font-size: 13px;
+        line-height: 24px;
+        margin:10px 0;
+    }
+    .features__inner{
+        justify-content: center;
+    }
+    /* .features__img{
+        margin-right: 30px;
+    } */
+    .infoForVpn{
+        margin-left: 30px;
+        margin-top: 33px;
+    }
+    .LaslesVPN__title{
+        width: 100%;
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .LaslesVPN__p{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .users__over{
+        max-width: 900px;
+    }
+    .item{
+        max-width: 300px;
+    }
+    .navigator__a + .navigator__a {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    .freePlan{
+        padding: 20px 0;
+    }
+    .planFooter__button{
+      font-size: 14px;
+      padding: 9px 40px;
+    }
+    .planFooter__text {
+        margin: 50px 0 20px 0;
+    }
+    .infoPlan__li{
+        line-height: 20px;
+        margin-bottom: 7px;
+        font-size: 13px;
+    }
+    .infoPlan__li:before{
+        top: -3px;
+        left: -26px;
+    }
+    .freePlan__img{
+        max-width: 100px;
+        width:100%;
+    }
+    .freePlan__title{
+        font-size: 15px;
+        margin: 14px 0 10px 0;
+    }
+    .coruselItem__comment{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .nameContry__name{
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .nameContry__contry{
+        font-size: 11px;
+    }
+    .peopleInfo__img{
+        max-width: 40px;
+        width: 100%;
+    }
+    .peopleInfo{
+        margin-bottom: 10px;
+    }
+    .subscribe{
+        max-width: 900px;
+        padding: 30px 47px;
+    }
+    .subscribe__title{
+        font-size: 28px;
+        line-height: 31px;
+    }
+    .subscribeb_btn{
+        width: 200px;
+        line-height: 19px;
+        font-size: 13px;
+    }
+    .lists{
+        margin-left: 75px;
+    }
+    .freePlan{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:900px){
+    .users{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .sign__button{
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+    .sign__span{
+        margin-right: 15px;
+        font-size: 13px;
+    }
+    .intro{
+        padding-top: 50px;
+    }
+    .LaslesVPN__btn {
+        max-width: 200px;
+        line-height: 15px;
+        font-size: 13px;
+    }
+    .features__img{
+      max-width: 428px;
+    }
+    .infoForVpn__text{
+        width: 100%;
+    }
+    .infoForVpn__li{
+        line-height: 20px;
+    }
+    .users__over{
+        max-width: 750px;
+    }
+    .item__number{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .item__text{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .item{
+        padding: 30px 0;
+    }
+    .item__info{
+        margin-left: 15px;
+    }
+    .item:not(:last-child):after{
+        max-height: 80px;
+    }
+    .item__img{
+        max-width: 50px;
+    }
+    .coruselItem__comment{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .coruselItem{
+        min-height:175px;
+    }
+    .nameContry{
+        margin-left: 8px;
+    }
+    .footerSubscribe{
+        max-width: 500px;
+    }
+    .subscribe__title{
+        font-size: 20px;
+        width: 100%;
+    }
+    .subscribe__substitle{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .footerSubscribe{
+        top:-30%;
+    }
+    .swiper-container{
+        width: 90%;
+    }
+  }
+
+
+  @media(max-width:800px){
+      .navigator{
+          display: none;
+      }
+      .footer__inner{
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .vpnLeft{
+          text-align: center;
+      }
+      .intro__inner{
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      .imgPeople__img{
+          max-width: 410px;
+      }
+      .LaslesVPN{
+          text-align: center;
+          margin-bottom: 50px;
+      }
+      .features__inner{
+          flex-wrap: wrap;
+      }
+      .users__over{
+         
+          max-width: 300px;
+      }
+      .users_items{
+        flex-wrap: wrap;
+        max-width: 130px;
+        margin: 0 auto;
+      }
+      .item:not(:last-child):after{
+          display: none;
+      }
+      .users{
+          padding-bottom: 60px;
+      }
+      .item{
+          justify-content: left;
+      }
+      .choose__inner{
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      
+      .freePlan{
+          margin-bottom: 10px;
+      }
+      .network__img{
+          margin-top: 90px;
+      }
+      .chooseHeader__subtitle{
+          width:100%;
+      }
+      .network__subtitle{
+          width: 100%;
+      }
+      .features{
+        padding: 20px 0 70px 0;
+      }
+      .header{
+          padding: 30px 0;
+      }
+     
+  }
+  
+  
+
+  @media(max-width:534px){
+      .freePlan{
+          margin-right: 0;
+      }
+      .network__title{
+          font-size: 25px;
+      }
+      .network__img{
+          margin-top: 50px;
+      }
+      .subscribe{
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+      }
+      .subscribe__left{
+          margin-bottom: 10px;
+      }
+      .subscribeb_btn {
+          max-width: 150px;
+          font-size: 12px;
+      }
+      .footerSubscribe{
+        max-width: 330px;
+      }
+      /* .vpnright{
+          flex-wrap: wrap;
+          justify-content: center;
+      } */
+      .vpnLeft{
+          margin-bottom: 20px;
+      }
+      .lists {
+        margin-left: 30px;
+    }
+    .lists__list-top{
+        font-size: 13px;
+    }
+    .lists__list-top{
+        font-size: 14px;
+    }
+    .network__title{
+        width: 100%;
+    }
+    .vpnLeft__textVpn{
+        width: 100%;
+    }
+    .lists__list--a{
+        font-size: 13px;
+    }
+  }
