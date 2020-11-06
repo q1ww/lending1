@@ -235,7 +235,9 @@ ul{
     z-index: 5;
   
 }
-
+.navigatorModal{
+    display: none;
+}
 .headerActive{
     position: fixed;
     top: 0;
@@ -1121,6 +1123,24 @@ padding-bottom: 250px;
       }
      .intro{
          padding-top: 118px;
+     }
+     .navigatorModal{
+         display: block;
+         
+     }
+     .navigatorModal__btn{
+        border:none;
+        color: #fff;
+        font-size: 14px;
+        background: #F53838;
+        padding: 5px;
+        border-radius: 5px;
+     }
+
+     .navigatorModal__sing{
+         font-size: 13px;
+         color: #ccc;
+         margin-right: 10px;
      }
   }
   

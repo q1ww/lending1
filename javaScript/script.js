@@ -53,7 +53,7 @@ var mySwiper = new Swiper('.swiper-container', {
 let btn = document.querySelector('.burger'),
     navigator = document.querySelector('.navigator'),
     header = document.querySelector('.header'),
-    signButton  = document.querySelector('.sign__button'),
+    buttonShow  = document.querySelector('.buttonShow'),
     singUserModal = document.querySelector('.singUserModal')
     
 
@@ -73,7 +73,7 @@ window.addEventListener('scroll', function() {
    }
   });
 
-  signButton.addEventListener('click', function(){
+  buttonShow.addEventListener('click', function(){
     singUserModal.style.display = "flex"
   })
   
